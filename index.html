@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8edf2">
+  <title>Una carta para ti ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="petal-field" id="petalField" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Inicio">para ti <span>♡</span></a>
+    <button class="sound-toggle" id="soundToggle" type="button" aria-pressed="false" title="Activar o pausar la música">
+      <span class="sound-icon">♫</span><span class="sound-label">Música</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy reveal">
+        <p class="eyebrow birthday-eyebrow"><span></span> hoy celebramos tu vida <span></span></p>
+        <p class="birthday-pretitle">¡Feliz cumpleaños,</p>
+        <h1 class="name-reveal">Cuchurumina<em class="name-heart">♡</em></h1>
+        <p class="intro">Hoy el mundo florece un poquito más porque existes tú. Preparé este pequeño rincón con todo mi cariño, solo para ti.</p>
+        <button class="primary-button" id="openLetter" type="button">Tengo una carta para ti <span>♡</span></button>
+        <p class="tiny-note">hecha con cariño, solo para ti</p>
+      </div>
+      <div class="hero-art reveal">
+        <div class="image-orbit orbit-one"></div>
+        <div class="image-orbit orbit-two"></div>
+        <figure class="flower-frame">
+          <img src="assets/lirios-referencia.png" alt="Lirios rosados floreciendo">
+        </figure>
+        <div class="floating-note note-top">hoy es tu día ✨</div>
+        <div class="floating-note note-bottom">♡ para Cuchurumina</div>
+        <div class="birthday-burst" aria-hidden="true"><span>✦</span><span>♡</span><span>✧</span><span>✿</span></div>
+        <span class="sparkle sparkle-a">✳</span><span class="sparkle sparkle-b">✧</span>
+      </div>
+      <a class="scroll-cue" href="#dedicatoria"><span></span> sigue bajando</a>
+    </section>
+
+    <section class="dedication section-pad" id="dedicatoria">
+      <div class="section-kicker">01 / un pequeño detalle</div>
+      <div class="dedication-inner reveal">
+        <span class="big-quote">“</span>
+        <h2>Como los lirios,<br><em>haces más bonito</em><br>cualquier lugar.</h2>
+        <p>Un regalo no siempre tiene que venir envuelto. A veces puede ser un rincón en internet, unas palabras y un montón de amor.</p>
+        <div class="flower-divider">✿　♡　✿</div>
+      </div>
+    </section>
+
+    <section class="letter-section section-pad" id="carta">
+      <div class="section-kicker">02 / lo que quiero decirte</div>
+      <div class="letter-card reveal">
+        <div class="letter-top"><span>PARA ALGUIEN MUY ESPECIAL</span><span>♡</span></div>
+        <div class="letter-content">
+          <p class="letter-date">En tu cumpleaños</p>
+          <h2>Mi querida <em>persona favorita,</em></h2>
+          <div class="letter-body" id="letterBody">
+            <p>Este espacio está reservado para tus palabras.</p>
+            <p>Cuando tengas lista tu carta, reemplaza este texto en <code>script.js</code> o pásamela y la dejamos exactamente como quieres.</p>
+          </div>
+          <p class="signature">Con todo mi cariño, <span>♡</span></p>
+        </div>
+        <div class="letter-stamp">con<br>amor</div>
+      </div>
+      <p class="letter-hint">La carta es el corazón de esta página. Puedes cambiar el texto cuando quieras.</p>
+    </section>
+
+    <section class="little-moments section-pad">
+      <div class="section-kicker">03 / pequeñas cosas</div>
+      <div class="moments-heading reveal">
+        <h2>Un ramo de<br><em>razones para sonreír.</em></h2>
+        <p>Toca cada flor. Hay una pequeña sorpresa escondida en cada una.</p>
+      </div>
+      <div class="flower-grid">
+        <button class="flower-tile reveal" data-message="Tu sonrisa tiene esa forma tan tuya de mejorar cualquier día." type="button">
+          <span class="flower-icon">✿</span><span class="flower-label">Tu sonrisa</span><span class="flower-plus">+</span>
+        </button>
+        <button class="flower-tile reveal" data-message="Me encanta la manera en que haces especiales hasta los momentos más sencillos." type="button">
+          <span class="flower-icon">❀</span><span class="flower-label">Tu esencia</span><span class="flower-plus">+</span>
+        </button>
+        <button class="flower-tile reveal" data-message="Ojalá la vida te devuelva multiplicado todo lo bonito que compartes." type="button">
+          <span class="flower-icon">✾</span><span class="flower-label">Tu corazón</span><span class="flower-plus">+</span>
+        </button>
+      </div>
+      <div class="message-pop" id="messagePop" role="status" aria-live="polite"><span>♡</span><p></p></div>
+    </section>
+
+    <section class="finale">
+      <div class="finale-flower">✿</div>
+      <p class="eyebrow">feliz cumpleaños</p>
+      <h2>Que nunca te falten<br><em>motivos para florecer.</em></h2>
+      <p class="finale-small">Y que siempre recuerdes lo especial que eres.</p>
+      <button class="heart-button" id="heartButton" type="button" aria-label="Enviar muchos corazones">♡</button>
+      <p class="footer-note">hecho especialmente para ti · <span>con amor</span></p>
+    </section>
+  </main>
+
+  <div class="modal" id="letterModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="closeLetter" type="button" aria-label="Cerrar">×</button>
+      <span class="modal-flower">✿</span>
+      <p class="eyebrow">una pausa para nosotros</p>
+      <h2 id="modalTitle">Hay algo que<br><em>quiero contarte...</em></h2>
+      <p>Desliza hasta la carta y tómate tu tiempo. Cada palabra está aquí por una razón.</p>
+      <button class="primary-button" id="goToLetter" type="button">Leer la carta <span>♡</span></button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
